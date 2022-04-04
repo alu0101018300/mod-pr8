@@ -1,6 +1,6 @@
 {
   "entryPoints": [
-    "./src/basicFunctions.ts"
+    "./src/sorts.ts"
   ],
   "out": "./docs"
 }
