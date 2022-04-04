@@ -1,6 +1,10 @@
 {
   "entryPoints": [
-    "./src/sorts.ts"
+    "./src/sorts.ts",
+    "./src/strategy.ts",
+    "./src/solver.ts",
+    "./src/bubbleSort.ts",
+    "./src/mergeSort.ts"
   ],
   "out": "./docs"
 }
