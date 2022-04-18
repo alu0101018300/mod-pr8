@@ -15,7 +15,9 @@ export abstract class ReduceOptions {
    */
   public templateMethod(): number {
     this.initializeAcc();
+    this.afterGettingAccumulator();
     this.getIteratorMax();
+    this.afterGettingMaxIterator();
     const solution: number = this.doTheOperation();
     console.log(`The solution is ${solution}`);
     return solution;
@@ -41,4 +43,7 @@ export abstract class ReduceOptions {
    * dependerá, obviamente, de la función que queramos hacer.
    */
   protected abstract doTheOperation(): number;
+
+  protected afterGettingAccumulator() {}
+  protected afterGettingMaxIterator() {}
 }

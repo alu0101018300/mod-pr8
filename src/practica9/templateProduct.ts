@@ -33,4 +33,12 @@ export class ReduceProduct extends ReduceOptions {
     }
     return acc;
   }
+
+  protected afterGettingAccumulator() {
+    console.log(`I've just get the accumulator`);
+  }
+
+  protected afterGettingMaxIterator() {
+    console.log(`I've just get the max iterator`);
+  }
 }
